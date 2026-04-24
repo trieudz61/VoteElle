@@ -58,7 +58,7 @@ def main():
     collected_tokens = []
     attempt = 1
     
-    while len(collected_tokens) < 3:
+    while len(collected_tokens) < 10:
         i = len(collected_tokens) + 1
         print(f"\n[***] LẦN {i}/3 (Thử lần {attempt}) - Đang tiêm mã Turnstile widget vào trang...")
         js_code = f"""
