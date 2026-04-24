@@ -15,36 +15,27 @@ CATEGORY   = "celebrity"
 URL_PATH   = "/elle-beauty-awards-2026/nhan-vat"
 # =================================================
 
-# ---------- Hàm đọc token từ file ----------
+# ---------- Hàm đọc token từ Supabase Online ----------
 def get_fresh_token():
     try:
-        for fname in ["captcha_multi_data.json", "captcha_data.json"]:
-            if not os.path.exists(fname):
-                continue
-            with open(fname, "r", encoding="utf-8") as f:
-                raw = f.read().strip()
-            if not raw or raw == "[]":
-                continue
-            data = json.loads(raw)
-            # Format mảng lines (captcha_multi_data.json)
-            if fname == "captcha_multi_data.json":
-                lines = raw.splitlines()
-                if lines:
-                    item = json.loads(lines[0])
-                    with open(fname, "w", encoding="utf-8") as f:
-                        f.write("\n".join(lines[1:]))
-                    return item.get("token", "")
-            # Format mảng json (captcha_data.json)
-            if isinstance(data, list) and len(data) > 0:
-                item = data[0]
-                with open(fname, "w", encoding="utf-8") as f:
-                    json.dump(data[1:], f, ensure_ascii=False, indent=4)
-                return item if isinstance(item, str) else item.get("token", "")
-            if isinstance(data, dict):
-                os.remove(fname)
-                return data.get("token", "")
-    except Exception:
-        pass
+        from dotenv import load_dotenv
+        from supabase import create_client, Client
+        load_dotenv()
+        
+        url = os.environ.get("SUPABASE_URL", "")
+        key = os.environ.get("SUPABASE_KEY", "")
+        if not url or not key:
+            print("[-] Chưa cấu hình SUPABASE_URL và SUPABASE_KEY trong file .env!")
+            return ""
+            
+        supabase: Client = create_client(url, key)
+        
+        # Gọi hàm pop_token (đã tự động lọc token < 5 phút và xoá sau khi rút)
+        res = supabase.rpc("pop_token").execute()
+        return res.data if res.data else ""
+        
+    except Exception as e:
+        print(f"[-] Lỗi lấy Token từ Database đám mây: {e}")
     return ""
 
 def gen_user(length=12):
@@ -233,10 +224,31 @@ res_vote = session.post(f'https://events.elle.vn{URL_PATH}', headers=headers_vot
 
 if res_vote.status_code == 200 and '"ok":false' not in res_vote.text:
     print("[v] VOTE THÀNH CÔNG!")
-    # Lưu tài khoản
-    with open("accounts_voted.txt", "a", encoding="utf-8") as f:
-        f.write(f"{email}|{password}|{vote_sid}\n")
-    print("[v] Đã lưu vào accounts_voted.txt!")
+    
+    # --- Lưu tài khoản lên Cloud DB thay vì file TXT ---
+    try:
+        from dotenv import load_dotenv
+        from supabase import create_client, Client
+        import datetime
+        load_dotenv()
+        
+        url = os.environ.get("SUPABASE_URL", "")
+        key = os.environ.get("SUPABASE_KEY", "")
+        if url and key:
+            supabase: Client = create_client(url, key)
+            account_data = {
+                "email": email,
+                "password": password,
+                "cookie_sid": vote_sid,
+                "last_time_vote": datetime.datetime.utcnow().isoformat()
+            }
+            supabase.table("accounts").insert(account_data).execute()
+            print("[v] Đã lưu tài khoản an toàn lên bảng 'accounts' của Supabase!")
+        else:
+            with open("accounts_voted.txt", "a", encoding="utf-8") as f:
+                f.write(f"{email}|{password}|{vote_sid}\n")
+    except Exception as e:
+        print(f"[-] Lỗi lưu Acc lên DB: {e}")
 else:
     print(f"[-] Vote thất bại: {res_vote.text[:200]}")
 

@@ -11,35 +11,34 @@ SITE_KEY = "0x4AAAAAACnJ4TeSqCnnHCkt" # Mã của WeChoice
 DOMAIN = "events.elle.vn"
 
 def save_to_json(data):
-    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "captcha_data.json")
-    # Nếu đang lưu mảng tokens thì append vào mảng cũ nếu có
+    # Dù tên là save_to_json nhưng giờ đây nó tự động đầy thẳng lên cấu hình Supabase Cloud!
     if isinstance(data, dict) and "token" in data:
-        # Giữ tương thích ngược với code cũ, biến nó thành mảng
         tokens = [data["token"]]
     elif isinstance(data, list):
-        tokens = data
+        tokens = [t["token"] if isinstance(t, dict) else t for t in data]
     else:
         tokens = []
 
-    # Thử đọc mảng cũ nếu có để cộng dồn (tránh ghi đè nếu chạy nhiều lần)
-    existing_tokens = []
-    if os.path.exists(file_path):
-        try:
-            with open(file_path, "r", encoding="utf-8") as f:
-                content = json.load(f)
-                if isinstance(content, list):
-                    existing_tokens = content
-                elif isinstance(content, dict) and "token" in content:
-                    existing_tokens = [content["token"]]
-        except:
-            pass
+    if not tokens:
+        return
 
-    existing_tokens.extend(tokens)
-
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(existing_tokens, f, ensure_ascii=False, indent=4)
-    print(f"[v] Đã lưu {len(tokens)} token mới vào: {file_path}. Tổng cộng: {len(existing_tokens)} tokens.")
-
+    try:
+        from dotenv import load_dotenv
+        from supabase import create_client, Client
+        load_dotenv()
+        url = os.environ.get("SUPABASE_URL", "")
+        key = os.environ.get("SUPABASE_KEY", "")
+        if not url or not key:
+            print("[-] LỖI: Vui lòng dán URL và KEY vào file .env")
+            return
+            
+        supabase: Client = create_client(url, key)
+        
+        for token in tokens:
+            supabase.table("turnstile_tokens").insert({"token": token}).execute()
+        print(f"[v] Đã nạp thành công {len(tokens)} TOKEN TƯƠI MỚI vào Supabase!")
+    except Exception as e:
+        print(f"[-] Lỗi nạp dữ liệu lên Supabase: {e}")
 def main():
     co = ChromiumOptions()
     # Mẹo: Đẩy cửa sổ ra khỏi màn hình để ẩn mà không bị Cloudflare phát hiện là Bot (Headless)
@@ -122,13 +121,10 @@ def main():
             try:
                 token = page.run_js('return window.__TOKEN__;')
                 if token and token != "":
-                    print(f"\\n[!] ĐÃ LẤY ĐƯỢC TURNSTILE TOKEN LẦN {i}: \\n{token[:50]}...")
-                    collected_tokens.append({
-                        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
-                        "captcha_type": "turnstile",
-                        "domain": DOMAIN,
-                        "token": token
-                    })
+                    print(f"\n[!] ĐÃ LẤY ĐƯỢC TURNSTILE TOKEN LẦN {i}: \n{token[:50]}...")
+                    # Đẩy thẳng trực tiếp token này lên Supabase ngay lập tức!
+                    save_to_json({"token": token})
+                    collected_tokens.append(token)
                     break
             except Exception as e:
                 pass
@@ -153,10 +149,7 @@ def main():
             
         attempt += 1
 
-    # Lưu mảng 3 tokens vào file JSON cộng dồn
-    if collected_tokens:
-        save_to_json(collected_tokens)
-    else:
+    if not collected_tokens:
         print("[-] Lỗi: Không lấy được token nào sau 3 lần thử!")
         
     # Tùy chọn: Đóng trình duyệt sau khi xong
