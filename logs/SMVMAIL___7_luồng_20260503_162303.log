@@ -1,0 +1,722 @@
+16:23:03 [INFO] === SMVMAIL — 7 luồng — 7 workers ===
+16:23:03 [INFO] [W-1] Chờ token cho [Đăng Ký]...
+16:23:03 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:23:03 [INFO] [W-3] Chờ token cho [Đăng Ký]...
+16:23:03 [INFO] [W-5] Chờ token cho [Đăng Ký]...
+16:23:03 [INFO] [W-6] Chờ token cho [Đăng Ký]...
+16:23:03 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:23:03 [INFO] [W-4] Chờ token cho [Đăng Ký]...
+16:23:22 [INFO] [W-1] [v] Có token cho [Đăng Ký]!
+16:23:22 [INFO] [W-1] 1. Đăng ký: maibao937890@smvmail.com
+16:23:22 [INFO] [W-3] [v] Có token cho [Đăng Ký]!
+16:23:22 [INFO] [W-3] 1. Đăng ký: nguyenphat97291@smvmail.com
+16:23:24 [DEBUG] [W-1] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:24 [INFO] [W-1] [v] Đăng ký thành công!
+16:23:24 [INFO] [W-1] 2. Đang chờ email xác thực...
+16:23:24 [INFO] [W-1] Chờ token cho [Đăng Nhập]...
+16:23:24 [INFO] [W-1] [v] Có token cho [Đăng Nhập]!
+16:23:25 [DEBUG] [W-3] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:25 [INFO] [W-3] [v] Đăng ký thành công!
+16:23:25 [INFO] [W-3] 2. Đang chờ email xác thực...
+16:23:25 [INFO] [W-3] Chờ token cho [Đăng Nhập]...
+16:23:28 [INFO] [W-1]   [1/7] Chưa có mail...
+16:23:28 [INFO] [W-3]   [1/7] Chưa có mail...
+16:23:29 [INFO] [W-3] [v] Có token cho [Đăng Nhập]!
+16:23:29 [INFO] [W-4] [v] Có token cho [Đăng Ký]!
+16:23:29 [INFO] [W-4] 1. Đăng ký: lyhoang97215@smvmail.com
+16:23:32 [DEBUG] [W-4] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:32 [INFO] [W-4] [v] Đăng ký thành công!
+16:23:32 [INFO] [W-4] 2. Đang chờ email xác thực...
+16:23:32 [INFO] [W-4] Chờ token cho [Đăng Nhập]...
+16:23:33 [INFO] [W-1] [v] Có link xác thực!
+16:23:33 [INFO] [W-1] 3. Kích hoạt tài khoản...
+16:23:33 [INFO] [W-3] [v] Có link xác thực!
+16:23:33 [INFO] [W-3] 3. Kích hoạt tài khoản...
+16:23:33 [INFO] [W-5] [v] Có token cho [Đăng Ký]!
+16:23:33 [INFO] [W-5] 1. Đăng ký: lyyenhuynh61659@smvmail.com
+16:23:35 [DEBUG] [W-1] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=055cf600c476b342370 → 200
+16:23:35 [INFO] [W-1] [v] Kích hoạt thành công!
+16:23:35 [INFO] [W-1] 4. Đăng nhập maibao937890@smvmail.com...
+16:23:35 [DEBUG] [W-3] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=bf8c9f887e9e2491722 → 200
+16:23:35 [INFO] [W-3] [v] Kích hoạt thành công!
+16:23:35 [INFO] [W-3] 4. Đăng nhập nguyenphat97291@smvmail.com...
+16:23:36 [DEBUG] [W-5] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:36 [INFO] [W-5] [v] Đăng ký thành công!
+16:23:36 [INFO] [W-5] 2. Đang chờ email xác thực...
+16:23:36 [INFO] [W-5] Chờ token cho [Đăng Nhập]...
+16:23:36 [INFO] [W-5] [v] Có token cho [Đăng Nhập]!
+16:23:36 [INFO] [W-4] [v] Có link xác thực!
+16:23:36 [INFO] [W-4] 3. Kích hoạt tài khoản...
+16:23:36 [DEBUG] [W-1] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:36 [INFO] [W-1] [v] Đăng nhập thành công! vote_sid: 3048bc6e-8da2-49...
+16:23:36 [INFO] [W-1] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:37 [INFO] [W-6] [v] Có token cho [Đăng Ký]!
+16:23:37 [INFO] [W-6] 1. Đăng ký: phatkhoa6134648@smvmail.com
+16:23:37 [INFO] [W-1] [v] Đã lưu tài khoản lên Supabase!
+16:23:37 [INFO] [W-1] Chờ token cho [Đăng Ký]...
+16:23:37 [DEBUG] [W-3] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:37 [INFO] [W-3] [v] Đăng nhập thành công! vote_sid: df2b641e-efba-4c...
+16:23:37 [INFO] [W-3] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:37 [INFO] [W-3] [v] Đã lưu tài khoản lên Supabase!
+16:23:37 [INFO] [W-3] Chờ token cho [Đăng Ký]...
+16:23:38 [DEBUG] [W-4] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=02833da84007b7efde9 → 200
+16:23:38 [INFO] [W-4] [v] Kích hoạt thành công!
+16:23:39 [DEBUG] [W-6] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:39 [INFO] [W-6] [v] Đăng ký thành công!
+16:23:39 [INFO] [W-6] 2. Đang chờ email xác thực...
+16:23:39 [INFO] [W-6] Chờ token cho [Đăng Nhập]...
+16:23:39 [INFO] [W-4] [v] Có token cho [Đăng Nhập]!
+16:23:39 [INFO] [W-4] 4. Đăng nhập lyhoang97215@smvmail.com...
+16:23:40 [INFO] [W-5] [v] Có link xác thực!
+16:23:40 [INFO] [W-5] 3. Kích hoạt tài khoản...
+16:23:40 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:23:40 [INFO] [W-7] [v] Có token cho [Đăng Ký]!
+16:23:40 [INFO] [W-7] 1. Đăng ký: tuanvy768492@smvmail.com
+16:23:40 [INFO] [W-2] 1. Đăng ký: hoangbui672839@smvmail.com
+16:23:41 [INFO] [W-1] [v] Có token cho [Đăng Ký]!
+16:23:41 [INFO] [W-1] 1. Đăng ký: ngocdang24028@smvmail.com
+16:23:41 [DEBUG] [W-4] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:41 [INFO] [W-4] [v] Đăng nhập thành công! vote_sid: 96940e4c-72be-48...
+16:23:41 [INFO] [W-4] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:41 [INFO] [W-4] [v] Đã lưu tài khoản lên Supabase!
+16:23:41 [INFO] [W-4] Chờ token cho [Đăng Ký]...
+16:23:42 [DEBUG] [W-5] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=9ec722d2dc4e23536ba → 200
+16:23:42 [INFO] [W-5] [v] Kích hoạt thành công!
+16:23:42 [INFO] [W-5] 4. Đăng nhập lyyenhuynh61659@smvmail.com...
+16:23:43 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:43 [INFO] [W-2] [v] Đăng ký thành công!
+16:23:43 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:23:43 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:23:43 [DEBUG] [W-7] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:43 [INFO] [W-7] [v] Đăng ký thành công!
+16:23:43 [INFO] [W-7] 2. Đang chờ email xác thực...
+16:23:43 [INFO] [W-7] Chờ token cho [Đăng Nhập]...
+16:23:43 [INFO] [W-6] [v] Có token cho [Đăng Nhập]!
+16:23:43 [INFO] [W-6] [v] Có link xác thực!
+16:23:43 [INFO] [W-6] 3. Kích hoạt tài khoản...
+16:23:43 [DEBUG] [W-1] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:43 [INFO] [W-1] [v] Đăng ký thành công!
+16:23:43 [INFO] [W-1] 2. Đang chờ email xác thực...
+16:23:43 [INFO] [W-1] Chờ token cho [Đăng Nhập]...
+16:23:44 [DEBUG] [W-5] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:44 [INFO] [W-5] [v] Đăng nhập thành công! vote_sid: 17bb9718-af21-40...
+16:23:44 [INFO] [W-5] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:44 [INFO] [W-5] [v] Đã lưu tài khoản lên Supabase!
+16:23:44 [INFO] [W-5] Chờ token cho [Đăng Ký]...
+16:23:45 [DEBUG] [W-6] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=de57216f590325279e1 → 200
+16:23:45 [INFO] [W-6] [v] Kích hoạt thành công!
+16:23:45 [INFO] [W-6] 4. Đăng nhập phatkhoa6134648@smvmail.com...
+16:23:46 [DEBUG] [W-6] POST /login → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"XÃ¡c minh báº£o máº­t khÃ´ng thÃ nh cÃ´ng. Vui lÃ²ng táº£i láº¡i trang Äá» lÃ m má»i CAPTCHA rá»i thá»­ láº¡i."}
+
+16:23:46 [ERROR] [W-6] [-] Không lấy được cookie login (200)
+16:23:46 [INFO] [W-6] Chờ token cho [Đăng Ký]...
+16:23:47 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:23:47 [INFO] [W-2] [v] Có link xác thực!
+16:23:47 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:23:47 [INFO] [W-7] [v] Có token cho [Đăng Nhập]!
+16:23:47 [INFO] [W-1] [v] Có token cho [Đăng Nhập]!
+16:23:48 [INFO] [W-7] [v] Có link xác thực!
+16:23:48 [INFO] [W-7] 3. Kích hoạt tài khoản...
+16:23:48 [INFO] [W-1] [v] Có link xác thực!
+16:23:48 [INFO] [W-1] 3. Kích hoạt tài khoản...
+16:23:49 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=f2df62a878929bcb9a3 → 200
+16:23:49 [INFO] [W-2] [v] Kích hoạt thành công!
+16:23:49 [INFO] [W-2] 4. Đăng nhập hoangbui672839@smvmail.com...
+16:23:49 [INFO] [W-6] [v] Có token cho [Đăng Ký]!
+16:23:49 [INFO] [W-6] 1. Đăng ký: tienphuongduong483123@smvmail.com
+16:23:50 [DEBUG] [W-7] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=4a97a7efa6bccfe2294 → 200
+16:23:50 [INFO] [W-7] [v] Kích hoạt thành công!
+16:23:50 [INFO] [W-7] 4. Đăng nhập tuanvy768492@smvmail.com...
+16:23:50 [DEBUG] [W-1] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=cdd87a0f9250446f228 → 200
+16:23:50 [INFO] [W-1] [v] Kích hoạt thành công!
+16:23:50 [INFO] [W-1] 4. Đăng nhập ngocdang24028@smvmail.com...
+16:23:50 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:50 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: 3a078999-f5ff-4d...
+16:23:50 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:51 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:23:51 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:23:51 [DEBUG] [W-7] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:51 [INFO] [W-7] [v] Đăng nhập thành công! vote_sid: 042fa882-8676-4f...
+16:23:51 [INFO] [W-7] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:52 [INFO] [W-7] [v] Đã lưu tài khoản lên Supabase!
+16:23:52 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:23:52 [DEBUG] [W-1] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:23:52 [INFO] [W-1] [v] Đăng nhập thành công! vote_sid: 93b156db-da96-42...
+16:23:52 [INFO] [W-1] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:23:52 [INFO] [W-1] [v] Đã lưu tài khoản lên Supabase!
+16:23:52 [INFO] [W-1] Chờ token cho [Đăng Ký]...
+16:23:52 [DEBUG] [W-6] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:52 [INFO] [W-6] [v] Đăng ký thành công!
+16:23:52 [INFO] [W-6] 2. Đang chờ email xác thực...
+16:23:52 [INFO] [W-6] Chờ token cho [Đăng Nhập]...
+16:23:54 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:23:54 [INFO] [W-2] 1. Đăng ký: haituanbui2281381@smvmail.com
+16:23:55 [INFO] [W-5] [v] Có token cho [Đăng Ký]!
+16:23:55 [INFO] [W-5] 1. Đăng ký: tuyenbui38274@smvmail.com
+16:23:56 [INFO] [W-6] [v] Có link xác thực!
+16:23:56 [INFO] [W-6] 3. Kích hoạt tài khoản...
+16:23:57 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:57 [INFO] [W-2] [v] Đăng ký thành công!
+16:23:57 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:23:57 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:23:57 [DEBUG] [W-5] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:23:57 [INFO] [W-5] [v] Đăng ký thành công!
+16:23:57 [INFO] [W-5] 2. Đang chờ email xác thực...
+16:23:57 [INFO] [W-5] Chờ token cho [Đăng Nhập]...
+16:23:58 [DEBUG] [W-6] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=2c02247acd3014972ac → 200
+16:23:58 [INFO] [W-6] [v] Kích hoạt thành công!
+16:23:59 [INFO] [W-7] [v] Có token cho [Đăng Ký]!
+16:23:59 [INFO] [W-7] 1. Đăng ký: danglongtrong170031@smvmail.com
+16:23:59 [INFO] [W-6] [v] Có token cho [Đăng Nhập]!
+16:23:59 [INFO] [W-6] 4. Đăng nhập tienphuongduong483123@smvmail.com...
+16:24:00 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:24:01 [DEBUG] [W-6] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:01 [INFO] [W-6] [v] Đăng nhập thành công! vote_sid: 5cf6c946-6b5d-43...
+16:24:01 [INFO] [W-6] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:01 [INFO] [W-2] [v] Có link xác thực!
+16:24:01 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:24:01 [INFO] [W-5] [v] Có token cho [Đăng Nhập]!
+16:24:01 [INFO] [W-6] [v] Đã lưu tài khoản lên Supabase!
+16:24:01 [INFO] [W-6] Chờ token cho [Đăng Ký]...
+16:24:01 [DEBUG] [W-7] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:01 [INFO] [W-7] [v] Đăng ký thành công!
+16:24:01 [INFO] [W-7] 2. Đang chờ email xác thực...
+16:24:01 [INFO] [W-7] Chờ token cho [Đăng Nhập]...
+16:24:01 [INFO] [W-5] [v] Có link xác thực!
+16:24:01 [INFO] [W-5] 3. Kích hoạt tài khoản...
+16:24:02 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=1ef13b21666fbf91f56 → 200
+16:24:02 [INFO] [W-2] [v] Kích hoạt thành công!
+16:24:02 [INFO] [W-2] 4. Đăng nhập haituanbui2281381@smvmail.com...
+16:24:03 [DEBUG] [W-5] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=001cc459ced2b131ae3 → 200
+16:24:03 [INFO] [W-5] [v] Kích hoạt thành công!
+16:24:03 [INFO] [W-5] 4. Đăng nhập tuyenbui38274@smvmail.com...
+16:24:04 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:04 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: f67f3dfa-bfac-45...
+16:24:04 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:04 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:24:04 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:24:05 [INFO] [W-6] [v] Có token cho [Đăng Ký]!
+16:24:05 [INFO] [W-6] 1. Đăng ký: phatphat40780@smvmail.com
+16:24:05 [INFO] [W-7] [v] Có token cho [Đăng Nhập]!
+16:24:05 [INFO] [W-7] [v] Có link xác thực!
+16:24:05 [INFO] [W-7] 3. Kích hoạt tài khoản...
+16:24:05 [DEBUG] [W-5] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:05 [INFO] [W-5] [v] Đăng nhập thành công! vote_sid: 17360531-a046-4b...
+16:24:05 [INFO] [W-5] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:06 [INFO] [W-5] [v] Đã lưu tài khoản lên Supabase!
+16:24:06 [INFO] [W-5] Chờ token cho [Đăng Ký]...
+16:24:07 [DEBUG] [W-7] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=3de68b10679ad88f082 → 200
+16:24:07 [INFO] [W-7] [v] Kích hoạt thành công!
+16:24:07 [INFO] [W-7] 4. Đăng nhập danglongtrong170031@smvmail.com...
+16:24:07 [DEBUG] [W-6] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:07 [INFO] [W-6] [v] Đăng ký thành công!
+16:24:07 [INFO] [W-6] 2. Đang chờ email xác thực...
+16:24:07 [INFO] [W-6] Chờ token cho [Đăng Nhập]...
+16:24:08 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:24:08 [INFO] [W-2] 1. Đăng ký: thinhquy05803@smvmail.com
+16:24:08 [INFO] [W-6] [v] Có token cho [Đăng Nhập]!
+16:24:08 [DEBUG] [W-7] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:08 [INFO] [W-7] [v] Đăng nhập thành công! vote_sid: 3543434d-4eb7-47...
+16:24:08 [INFO] [W-7] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:09 [INFO] [W-7] [v] Đã lưu tài khoản lên Supabase!
+16:24:09 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:24:10 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:10 [INFO] [W-2] [v] Đăng ký thành công!
+16:24:10 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:24:10 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:24:11 [INFO] [W-6] [v] Có link xác thực!
+16:24:11 [INFO] [W-6] 3. Kích hoạt tài khoản...
+16:24:12 [INFO] [W-3] [v] Có token cho [Đăng Ký]!
+16:24:12 [INFO] [W-3] 1. Đăng ký: haitrang929328@smvmail.com
+16:24:13 [INFO] [W-1] [v] Có token cho [Đăng Ký]!
+16:24:13 [INFO] [W-1] 1. Đăng ký: tramvo9323655@smvmail.com
+16:24:13 [DEBUG] [W-6] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=1011b4dbf1ae7cdd8d4 → 200
+16:24:13 [INFO] [W-6] [v] Kích hoạt thành công!
+16:24:13 [INFO] [W-6] 4. Đăng nhập phatphat40780@smvmail.com...
+16:24:14 [INFO] [W-2] [v] Có link xác thực!
+16:24:14 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:24:16 [DEBUG] [W-3] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:16 [INFO] [W-3] [v] Đăng ký thành công!
+16:24:16 [INFO] [W-3] 2. Đang chờ email xác thực...
+16:24:16 [INFO] [W-3] Chờ token cho [Đăng Nhập]...
+16:24:16 [DEBUG] [W-1] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:16 [INFO] [W-1] [v] Đăng ký thành công!
+16:24:16 [INFO] [W-1] 2. Đang chờ email xác thực...
+16:24:16 [INFO] [W-1] Chờ token cho [Đăng Nhập]...
+16:24:16 [DEBUG] [W-6] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:16 [INFO] [W-6] [v] Đăng nhập thành công! vote_sid: 570e116d-1d8b-4d...
+16:24:16 [INFO] [W-6] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:17 [INFO] [W-6] [v] Đã lưu tài khoản lên Supabase!
+16:24:17 [INFO] [W-6] Chờ token cho [Đăng Ký]...
+16:24:17 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=8a4763dcd23f0cb9d2e → 200
+16:24:17 [INFO] [W-2] [v] Kích hoạt thành công!
+16:24:17 [INFO] [W-6] [v] Có token cho [Đăng Ký]!
+16:24:17 [INFO] [W-6] 1. Đăng ký: huynhhuynhyen714190@smvmail.com
+16:24:17 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:24:17 [INFO] [W-2] 4. Đăng nhập thinhquy05803@smvmail.com...
+16:24:19 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:19 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: 521c8b08-e627-40...
+16:24:19 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:19 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:24:19 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:24:19 [DEBUG] [W-6] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:19 [INFO] [W-6] [v] Đăng ký thành công!
+16:24:19 [INFO] [W-6] 2. Đang chờ email xác thực...
+16:24:19 [INFO] [W-6] Chờ token cho [Đăng Nhập]...
+16:24:20 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:24:20 [INFO] [W-2] 1. Đăng ký: phatlongho93339@smvmail.com
+16:24:20 [INFO] [W-3] [v] Có link xác thực!
+16:24:20 [INFO] [W-3] 3. Kích hoạt tài khoản...
+16:24:20 [INFO] [W-1] [v] Có link xác thực!
+16:24:20 [INFO] [W-1] 3. Kích hoạt tài khoản...
+16:24:22 [DEBUG] [W-1] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=5db528e1fb3a45f5e43 → 200
+16:24:22 [INFO] [W-1] [v] Kích hoạt thành công!
+16:24:22 [DEBUG] [W-3] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=8f921d00c510cc33407 → 200
+16:24:22 [INFO] [W-3] [v] Kích hoạt thành công!
+16:24:22 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:22 [INFO] [W-2] [v] Đăng ký thành công!
+16:24:22 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:24:22 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:24:23 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:24:23 [INFO] [W-6] [v] Có link xác thực!
+16:24:23 [INFO] [W-6] 3. Kích hoạt tài khoản...
+16:24:25 [DEBUG] [W-6] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=1b72185c54128c298b6 → 200
+16:24:25 [INFO] [W-6] [v] Kích hoạt thành công!
+16:24:26 [INFO] [W-2] [v] Có link xác thực!
+16:24:26 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:24:27 [INFO] [W-7] [v] Có token cho [Đăng Ký]!
+16:24:27 [INFO] [W-7] 1. Đăng ký: anhtuyen4734978@smvmail.com
+16:24:27 [INFO] [W-6] [v] Có token cho [Đăng Nhập]!
+16:24:27 [INFO] [W-6] 4. Đăng nhập huynhhuynhyen714190@smvmail.com...
+16:24:28 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=69da78dbf1514c307a9 → 200
+16:24:28 [INFO] [W-2] [v] Kích hoạt thành công!
+16:24:28 [INFO] [W-2] 4. Đăng nhập phatlongho93339@smvmail.com...
+16:24:29 [DEBUG] [W-6] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:29 [INFO] [W-6] [v] Đăng nhập thành công! vote_sid: 45e0eeec-6435-43...
+16:24:29 [INFO] [W-6] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:29 [INFO] [W-6] [v] Đã lưu tài khoản lên Supabase!
+16:24:29 [INFO] [W-6] Chờ token cho [Đăng Ký]...
+16:24:29 [INFO] [W-6] [v] Có token cho [Đăng Ký]!
+16:24:29 [INFO] [W-6] 1. Đăng ký: dovyho239768@smvmail.com
+16:24:29 [DEBUG] [W-7] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:29 [INFO] [W-7] [v] Đăng ký thành công!
+16:24:29 [INFO] [W-7] 2. Đang chờ email xác thực...
+16:24:29 [INFO] [W-7] Chờ token cho [Đăng Nhập]...
+16:24:29 [INFO] [W-7] [v] Có token cho [Đăng Nhập]!
+16:24:30 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:30 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: ea30ee57-fb97-48...
+16:24:30 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:30 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:24:30 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:24:32 [DEBUG] [W-6] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:32 [INFO] [W-6] [v] Đăng ký thành công!
+16:24:32 [INFO] [W-6] 2. Đang chờ email xác thực...
+16:24:32 [INFO] [W-6] Chờ token cho [Đăng Nhập]...
+16:24:32 [INFO] [W-6] [v] Có token cho [Đăng Nhập]!
+16:24:33 [INFO] [W-7] [v] Có link xác thực!
+16:24:33 [INFO] [W-7] 3. Kích hoạt tài khoản...
+16:24:33 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:24:33 [INFO] [W-2] 1. Đăng ký: phanyendat1481865@smvmail.com
+16:24:35 [DEBUG] [W-7] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=f789acce5a28fbce71b → 200
+16:24:35 [INFO] [W-7] [v] Kích hoạt thành công!
+16:24:35 [INFO] [W-7] 4. Đăng nhập anhtuyen4734978@smvmail.com...
+16:24:36 [INFO] [W-6] [v] Có link xác thực!
+16:24:36 [INFO] [W-6] 3. Kích hoạt tài khoản...
+16:24:37 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:37 [INFO] [W-2] [v] Đăng ký thành công!
+16:24:37 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:24:37 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:24:37 [DEBUG] [W-7] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:37 [INFO] [W-7] [v] Đăng nhập thành công! vote_sid: 2e7320b9-18fd-4e...
+16:24:37 [INFO] [W-7] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:37 [INFO] [W-7] [v] Đã lưu tài khoản lên Supabase!
+16:24:37 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:24:37 [INFO] [W-7] [v] Có token cho [Đăng Ký]!
+16:24:37 [INFO] [W-7] 1. Đăng ký: phanquang538148@smvmail.com
+16:24:38 [DEBUG] [W-6] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=eea7c16bfd89b093009 → 200
+16:24:38 [INFO] [W-6] [v] Kích hoạt thành công!
+16:24:38 [INFO] [W-6] 4. Đăng nhập dovyho239768@smvmail.com...
+16:24:38 [INFO] [W-4] [v] Có token cho [Đăng Ký]!
+16:24:38 [INFO] [W-4] 1. Đăng ký: mytrisang48907@smvmail.com
+16:24:39 [DEBUG] [W-6] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:39 [INFO] [W-6] [v] Đăng nhập thành công! vote_sid: 86e2ee43-e66e-4d...
+16:24:39 [INFO] [W-6] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:39 [INFO] [W-6] [v] Đã lưu tài khoản lên Supabase!
+16:24:39 [INFO] [W-6] Chờ token cho [Đăng Ký]...
+16:24:40 [DEBUG] [W-7] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:40 [INFO] [W-7] [v] Đăng ký thành công!
+16:24:40 [INFO] [W-7] 2. Đang chờ email xác thực...
+16:24:40 [INFO] [W-7] Chờ token cho [Đăng Nhập]...
+16:24:41 [DEBUG] [W-4] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:41 [INFO] [W-4] [v] Đăng ký thành công!
+16:24:41 [INFO] [W-4] 2. Đang chờ email xác thực...
+16:24:41 [INFO] [W-4] Chờ token cho [Đăng Nhập]...
+16:24:41 [INFO] [W-2] [v] Có link xác thực!
+16:24:41 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:24:41 [INFO] [W-4] [v] Có token cho [Đăng Nhập]!
+16:24:43 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=bf4aa59481d6f9ca1d9 → 200
+16:24:43 [INFO] [W-2] [v] Kích hoạt thành công!
+16:24:44 [INFO] [W-7] [v] Có token cho [Đăng Nhập]!
+16:24:44 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:24:44 [INFO] [W-2] 4. Đăng nhập phanyendat1481865@smvmail.com...
+16:24:44 [INFO] [W-7] [v] Có link xác thực!
+16:24:44 [INFO] [W-7] 3. Kích hoạt tài khoản...
+16:24:45 [INFO] [W-4] [v] Có link xác thực!
+16:24:45 [INFO] [W-4] 3. Kích hoạt tài khoản...
+16:24:45 [INFO] [W-1] [v] Có token cho [Đăng Nhập]!
+16:24:45 [INFO] [W-1] 4. Đăng nhập tramvo9323655@smvmail.com...
+16:24:45 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:45 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: 7ab0a21d-5262-4d...
+16:24:45 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:45 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:24:45 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:24:45 [DEBUG] [W-7] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=925a73adc616c591109 → 200
+16:24:45 [INFO] [W-7] [v] Kích hoạt thành công!
+16:24:45 [INFO] [W-7] 4. Đăng nhập phanquang538148@smvmail.com...
+16:24:46 [DEBUG] [W-1] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:46 [INFO] [W-1] [v] Đăng nhập thành công! vote_sid: c2fd1c9f-960c-4f...
+16:24:46 [INFO] [W-1] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:46 [DEBUG] [W-4] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=640e5a72e0b52d218f5 → 200
+16:24:46 [INFO] [W-4] [v] Kích hoạt thành công!
+16:24:46 [INFO] [W-4] 4. Đăng nhập mytrisang48907@smvmail.com...
+16:24:46 [INFO] [W-1] [v] Đã lưu tài khoản lên Supabase!
+16:24:46 [INFO] [W-1] Chờ token cho [Đăng Ký]...
+16:24:47 [DEBUG] [W-7] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:47 [INFO] [W-7] [v] Đăng nhập thành công! vote_sid: 55bfd4fc-2324-48...
+16:24:47 [INFO] [W-7] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:47 [INFO] [W-1] [v] Có token cho [Đăng Ký]!
+16:24:47 [INFO] [W-1] 1. Đăng ký: tuyenle279744@smvmail.com
+16:24:47 [INFO] [W-7] [v] Đã lưu tài khoản lên Supabase!
+16:24:47 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:24:48 [DEBUG] [W-4] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:48 [INFO] [W-4] [v] Đăng nhập thành công! vote_sid: 286cde86-050e-4e...
+16:24:48 [INFO] [W-4] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:48 [INFO] [W-4] [v] Đã lưu tài khoản lên Supabase!
+16:24:48 [INFO] [W-4] Chờ token cho [Đăng Ký]...
+16:24:49 [DEBUG] [W-1] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:24:49 [INFO] [W-1] [v] Đăng ký thành công!
+16:24:49 [INFO] [W-1] 2. Đang chờ email xác thực...
+16:24:49 [INFO] [W-1] Chờ token cho [Đăng Nhập]...
+16:24:50 [INFO] [W-1] [v] Có token cho [Đăng Nhập]!
+16:24:53 [INFO] [W-1] [v] Có link xác thực!
+16:24:53 [INFO] [W-1] 3. Kích hoạt tài khoản...
+16:24:55 [DEBUG] [W-1] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=d975acac90a1d6f94c7 → 200
+16:24:55 [INFO] [W-1] [v] Kích hoạt thành công!
+16:24:55 [INFO] [W-1] 4. Đăng nhập tuyenle279744@smvmail.com...
+16:24:57 [DEBUG] [W-1] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:24:57 [INFO] [W-1] [v] Đăng nhập thành công! vote_sid: c292ea95-5afd-4d...
+16:24:57 [INFO] [W-1] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:24:57 [INFO] [W-1] [v] Đã lưu tài khoản lên Supabase!
+16:24:57 [INFO] [W-1] Chờ token cho [Đăng Ký]...
+16:24:59 [INFO] [W-5] [v] Có token cho [Đăng Ký]!
+16:24:59 [INFO] [W-5] 1. Đăng ký: vonhung86857@smvmail.com
+16:25:02 [DEBUG] [W-5] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:02 [INFO] [W-5] [v] Đăng ký thành công!
+16:25:02 [INFO] [W-5] 2. Đang chờ email xác thực...
+16:25:02 [INFO] [W-5] Chờ token cho [Đăng Nhập]...
+16:25:02 [INFO] [W-5] [v] Có token cho [Đăng Nhập]!
+16:25:03 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:25:03 [INFO] [W-2] 1. Đăng ký: nhisangyen983183@smvmail.com
+16:25:06 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:06 [INFO] [W-2] [v] Đăng ký thành công!
+16:25:06 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:25:06 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:25:06 [INFO] [W-5] [v] Có link xác thực!
+16:25:06 [INFO] [W-5] 3. Kích hoạt tài khoản...
+16:25:06 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:25:08 [DEBUG] [W-5] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=c6a0bc955e45408419e → 200
+16:25:08 [INFO] [W-5] [v] Kích hoạt thành công!
+16:25:08 [INFO] [W-5] 4. Đăng nhập vonhung86857@smvmail.com...
+16:25:09 [DEBUG] [W-5] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:25:09 [INFO] [W-5] [v] Đăng nhập thành công! vote_sid: d1c10907-c484-41...
+16:25:09 [INFO] [W-5] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:25:09 [INFO] [W-5] [v] Đã lưu tài khoản lên Supabase!
+16:25:09 [INFO] [W-5] Chờ token cho [Đăng Ký]...
+16:25:09 [INFO] [W-5] [v] Có token cho [Đăng Ký]!
+16:25:09 [INFO] [W-5] 1. Đăng ký: tienyen19117@smvmail.com
+16:25:09 [DEBUG] [W-5] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"Xác minh bảo mật không thành công. Vui lòng tải lại trang để làm mới CAPTCHA rồi thử lại.","success":""}
+
+16:25:09 [INFO] [W-5] [!] CAPTCHA expired, retry...
+16:25:09 [INFO] [W-5] 1. Retry đăng ký lần 2 — lấy token mới...
+16:25:09 [INFO] [W-5] Chờ token cho [Đăng Ký]...
+16:25:10 [INFO] [W-2]   [1/7] Chưa có mail...
+16:25:11 [INFO] [W-7] [v] Có token cho [Đăng Ký]!
+16:25:11 [INFO] [W-7] 1. Đăng ký: thutaiho392386@smvmail.com
+16:25:12 [DEBUG] [W-7] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"Xác minh bảo mật không thành công. Vui lòng tải lại trang để làm mới CAPTCHA rồi thử lại.","success":""}
+
+16:25:12 [INFO] [W-7] [!] CAPTCHA expired, retry...
+16:25:12 [INFO] [W-7] 1. Retry đăng ký lần 2 — lấy token mới...
+16:25:12 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:25:14 [INFO] [W-2] [v] Có link xác thực!
+16:25:14 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:25:16 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=8ce0c00312a682a9a7c → 200
+16:25:16 [INFO] [W-2] [v] Kích hoạt thành công!
+16:25:16 [INFO] [W-2] 4. Đăng nhập nhisangyen983183@smvmail.com...
+16:25:17 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:25:17 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: e4797956-98d8-46...
+16:25:17 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:25:17 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:25:17 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:25:17 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:25:17 [INFO] [W-2] 1. Đăng ký: thyyenchau59068@smvmail.com
+16:25:19 [INFO] [W-1] [v] Có token cho [Đăng Ký]!
+16:25:19 [INFO] [W-1] 1. Đăng ký: chaulantien4476242@smvmail.com
+16:25:20 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:20 [INFO] [W-2] [v] Đăng ký thành công!
+16:25:20 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:25:20 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:25:21 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:25:22 [DEBUG] [W-1] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:22 [INFO] [W-1] [v] Đăng ký thành công!
+16:25:22 [INFO] [W-1] 2. Đang chờ email xác thực...
+16:25:22 [INFO] [W-1] Chờ token cho [Đăng Nhập]...
+16:25:24 [INFO] [W-2] [v] Có link xác thực!
+16:25:24 [INFO] [W-2] 3. Kích hoạt tài khoản...
+16:25:25 [INFO] [W-6] [v] Có token cho [Đăng Ký]!
+16:25:25 [INFO] [W-6] 1. Đăng ký: lehieudang93517@smvmail.com
+16:25:25 [INFO] [W-1]   [1/7] Chưa có mail...
+16:25:26 [DEBUG] [W-2] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=19490b70b55e034fcd1 → 200
+16:25:26 [INFO] [W-2] [v] Kích hoạt thành công!
+16:25:26 [INFO] [W-2] 4. Đăng nhập thyyenchau59068@smvmail.com...
+16:25:27 [DEBUG] [W-6] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:27 [INFO] [W-6] [v] Đăng ký thành công!
+16:25:27 [INFO] [W-6] 2. Đang chờ email xác thực...
+16:25:27 [INFO] [W-6] Chờ token cho [Đăng Nhập]...
+16:25:27 [DEBUG] [W-2] POST /login → 303 | resp=3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4080,["223","static/chunks/223-154b8ac825b44211.js","185","static/chunks/app/layout-5f79a64397dc40d6.js"],""]
+4:["slug","elle-beauty-awards-2026","d"]
+0:["8XKd3MQ3y
+16:25:27 [INFO] [W-2] [v] Đăng nhập thành công! vote_sid: c2afaa7e-2adb-4a...
+16:25:27 [INFO] [W-2] [v] Lấy SID thành công (Bỏ qua Vote)!
+16:25:27 [INFO] [W-5] [v] Có token cho [Đăng Ký]!
+16:25:28 [INFO] [W-2] [v] Đã lưu tài khoản lên Supabase!
+16:25:28 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:25:29 [INFO] [W-1] [v] Có token cho [Đăng Nhập]!
+16:25:29 [INFO] [W-1] [v] Có link xác thực!
+16:25:29 [INFO] [W-1] 3. Kích hoạt tài khoản...
+16:25:30 [DEBUG] [W-5] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:30 [INFO] [W-5] [v] Đăng ký thành công!
+16:25:30 [INFO] [W-5] 2. Đang chờ email xác thực...
+16:25:30 [INFO] [W-5] Chờ token cho [Đăng Nhập]...
+16:25:30 [INFO] [W-5] [v] Có token cho [Đăng Nhập]!
+16:25:31 [DEBUG] [W-1] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=b797bd28ec44a109c37 → 200
+16:25:31 [INFO] [W-1] [v] Kích hoạt thành công!
+16:25:31 [INFO] [W-1] 4. Đăng nhập chaulantien4476242@smvmail.com...
+16:25:31 [INFO] [W-6]   [1/7] Chưa có mail...
+16:25:31 [DEBUG] [W-1] POST /login → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"XÃ¡c minh báº£o máº­t khÃ´ng thÃ nh cÃ´ng. Vui lÃ²ng táº£i láº¡i trang Äá» lÃ m má»i CAPTCHA rá»i thá»­ láº¡i."}
+
+16:25:31 [ERROR] [W-1] [-] Không lấy được cookie login (200)
+16:25:31 [INFO] [W-1] Chờ token cho [Đăng Ký]...
+16:25:33 [INFO] [W-7] [v] Có token cho [Đăng Ký]!
+16:25:33 [DEBUG] [W-7] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"Xác minh bảo mật không thành công. Vui lòng tải lại trang để làm mới CAPTCHA rồi thử lại.","success":""}
+
+16:25:33 [INFO] [W-7] [!] CAPTCHA expired, retry...
+16:25:33 [INFO] [W-7] 1. Retry đăng ký lần 3 — lấy token mới...
+16:25:33 [INFO] [W-7] Chờ token cho [Đăng Ký]...
+16:25:34 [INFO] [W-5] [v] Có link xác thực!
+16:25:34 [INFO] [W-5] 3. Kích hoạt tài khoản...
+16:25:35 [INFO] [W-6] [v] Có link xác thực!
+16:25:35 [INFO] [W-6] 3. Kích hoạt tài khoản...
+16:25:35 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:25:35 [INFO] [W-2] 1. Đăng ký: hieuly0360964@smvmail.com
+16:25:35 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"Xác minh bảo mật không thành công. Vui lòng tải lại trang để làm mới CAPTCHA rồi thử lại.","success":""}
+
+16:25:35 [INFO] [W-2] [!] CAPTCHA expired, retry...
+16:25:35 [INFO] [W-2] 1. Retry đăng ký lần 2 — lấy token mới...
+16:25:35 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:25:35 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:25:36 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"Xác minh bảo mật không thành công. Vui lòng tải lại trang để làm mới CAPTCHA rồi thử lại.","success":""}
+
+16:25:36 [INFO] [W-2] [!] CAPTCHA expired, retry...
+16:25:36 [INFO] [W-2] 1. Retry đăng ký lần 3 — lấy token mới...
+16:25:36 [INFO] [W-2] Chờ token cho [Đăng Ký]...
+16:25:36 [INFO] [W-2] [v] Có token cho [Đăng Ký]!
+16:25:36 [DEBUG] [W-5] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=0cfbd445b020fe29752 → 200
+16:25:36 [INFO] [W-5] [v] Kích hoạt thành công!
+16:25:36 [INFO] [W-5] 4. Đăng nhập tienyen19117@smvmail.com...
+16:25:36 [DEBUG] [W-5] POST /login → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"XÃ¡c minh báº£o máº­t khÃ´ng thÃ nh cÃ´ng. Vui lÃ²ng táº£i láº¡i trang Äá» lÃ m má»i CAPTCHA rá»i thá»­ láº¡i."}
+
+16:25:36 [ERROR] [W-5] [-] Không lấy được cookie login (200)
+16:25:36 [INFO] [W-5] Chờ token cho [Đăng Ký]...
+16:25:36 [INFO] [W-5] [v] Có token cho [Đăng Ký]!
+16:25:36 [INFO] [W-5] 1. Đăng ký: thangbuiyen3536036@smvmail.com
+16:25:37 [DEBUG] [W-6] GET https://baseapi.elle.vn/auth/email-confirmation?confirmation=2a1d7347a09cc8da5a3 → 200
+16:25:37 [INFO] [W-6] [v] Kích hoạt thành công!
+16:25:39 [DEBUG] [W-2] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:39 [INFO] [W-2] [v] Đăng ký thành công!
+16:25:39 [INFO] [W-2] 2. Đang chờ email xác thực...
+16:25:39 [INFO] [W-2] Chờ token cho [Đăng Nhập]...
+16:25:39 [INFO] [W-2] [v] Có token cho [Đăng Nhập]!
+16:25:39 [DEBUG] [W-5] POST /register → 200 | resp=0:["$@1",["8XKd3MQ3ywFpgbVSwJZUc",null]]
+1:{"error":"","success":"Tài khoản đã được tạo. Nếu hệ thống yêu cầu xác nhận email, vui lòng kiểm tra hộp thư trước khi đăng nhập."}
+
+16:25:39 [INFO] [W-5] [v] Đăng ký thành công!
+16:25:39 [INFO] [W-5] 2. Đang chờ email xác thực...
+16:25:39 [INFO] [W-5] Chờ token cho [Đăng Nhập]...
